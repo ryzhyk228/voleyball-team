@@ -1,80 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Roboto:wght@300;400&display=swap');
 
         body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(to bottom, #0057b7, #ffd700);
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
+            background: linear-gradient(to bottom, #003366, #0066cc);
             color: white;
         }
+
         header {
-            background: rgba(0, 0, 0, 0.7);
-            padding: 15px;
+            background: linear-gradient(to right, #0057b8, #ffd700);
+            padding: 20px 0;
+            color: white;
             text-align: center;
         }
-        h3 {
-            margin: 0;
-            font-size: 24px;
+        #players {
+            background: linear-gradient(to right, #004a99, #0077cc);
+        }
+        
+        
+        #awards {
+            background: linear-gradient(to right, #ffd700, #ffcc00);
+            color: black;
+        }
+        
+        footer {
+            background: linear-gradient(to right, #002855, #001133);
+        }
+        header h3 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 32px;
+            text-transform: uppercase;
+        }
+        nav {
+            margin-top: 10px;
         }
         nav a {
-            color: #ffd700;
+            color: white;
             text-decoration: none;
-            margin: 0 10px;
             font-size: 18px;
+            margin: 0 15px;
+            font-weight: bold;
             transition: color 0.3s;
         }
         nav a:hover {
-            color: #fff;
+            color: #0057b8;
         }
-        .main-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
+
+        section {
+            max-width: 900px;
+            margin: 30px auto;
             padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        #history {
+            background: #0057b8;
+            color: white;
+        }
+        #history h2 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 28px;
+        }
+
+        #players {
+            background: white;
+            color: black;
+        }
+        #players h2 {
+            font-family: 'Oswald', sans-serif;
+            color: #0057b8;
+            font-size: 28px;
+        }
+
+        .main-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            background: linear-gradient(to right, #ff6600, #ff3300);
         }
         .text-container {
-            background: rgba(0, 0, 0, 0.6);
-            padding: 20px;
-            border-radius: 10px;
-            max-width: 800px;
-            margin-bottom: 20px;
-        }
-        .floating-image {
-            width: 100%;
-            max-width: 300px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-        }
-        h1 {
-            font-size: 26px;
-            color: #ffd700;
-        }
-        h2 {
-            font-size: 22px;
-            color: #ffcc00;
-        }
-        p {
-            font-size: 16px;
-            line-height: 1.6;
-        }
-        footer {
-            background: rgba(0, 0, 0, 0.8);
             padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
             text-align: center;
+            transition: transform 0.3s ease;
+            background: linear-gradient(to bottom, #0057b8, #003366);
+            color: white;
+            border: 1px solid #ffffff55;
+        }
+        .text-container:hover {
+            transform: translateY(-5px);
+        }
+        .text-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        #awards {
+            background: #ffd700;
+            color: black;
+        }
+        #awards h2 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 28px;
+            color: #0057b8;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
         }
         footer a {
             color: #ffd700;
             text-decoration: none;
-            transition: color 0.3s;
         }
-        footer a:hover {
-            color: #fff;
-        }
-        .text-container::after {
-            content: "🏐";
-            display: block;
-            text-align: center;
-            font-size: 30px;
-            margin-top: 10px;
-        }
-    
